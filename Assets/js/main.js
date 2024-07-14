@@ -25,7 +25,7 @@ search.addEventListener("click", () => {
         return;
       } else {
         cityHide.textContent = city;
-        container.style.height = "555px";
+        
         container.classList.add("active");
         weatherBox.classList.add("active");
         weatherDetails.classList.add("active");
@@ -36,7 +36,7 @@ search.addEventListener("click", () => {
 
         switch (json.weather[0].main) {
           case "Clear":
-            image.src = "/Assets/images/clear.png";
+            image.src = "/Assets/images/clear3.png";
             break;
           case "Rain":
             image.src = "/Assets/images/rain.png";
